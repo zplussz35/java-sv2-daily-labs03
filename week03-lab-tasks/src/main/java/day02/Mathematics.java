@@ -25,12 +25,12 @@ public class Mathematics {
     public static void main(String[] args) {
         Mathematics mat = new Mathematics();
         Scanner sc = new Scanner(System.in);
-        int szam=-1;
+        int szam;
         do{
-            System.out.print("Adjon meg egy pozitív egész számot(0->kilépés): ");
+            System.out.print("Adjon meg egy pozitív egész számot(-1->kilépés): ");
             szam= sc.nextInt();
             sc.nextLine();
-            if (szam==0){
+            if (szam==-1){
                 System.out.println("Program kilép...");
                 break;
             }
